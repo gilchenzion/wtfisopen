@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css" />
 		
 		<script>
+			var count;
 			var cbk = function(data){
 				for (var i = 0; i < data.data.length; i++)
 				{
@@ -16,10 +17,15 @@
 							$('.inner').append("<h3>"+ getFullName(checkJJs()) +"</h3>");
 							for (var j = 0; j < data.data[i].menu.length; j++)
 							{
-								$('.inner').append("<p class='menu_item'>" + data.data[i].menu[j] + "</p>");
+								$('.inner').append("<p class='menu_item'><span class='item'>" + data.data[i].menu[j] + "</span> " + Math.floor(Math.random() * 50) + " <a href='#'>Likes</a> " + Math.floor(Math.random() * 50) + " <a href='#'>Dislikes</a></p>");
 							}
+							count++;
+							$('.inner').append("<div class='clearer'></div>");
 					}
-					$('.inner').append("<div class='clearer'></div>");
+					
+				}
+				if(count == 0){
+						$('.inner').append("<div class='closed'>Sorry! Ferris is Closed! Check back soon!</div>");
 				}
 			};
 		</script>
@@ -27,9 +33,11 @@
 		
 	</head>
 	<body>
+		<div class="container">
 		<h1>JJ's Place</h1>
 		<div class="inner"></div>
 		<script src="http://data.adicu.com/dining?meal_on=2013-3-2&dining_hall=fer&api_token=5131554a6a6f1c0002bc0e82&jsonp=cbk" >
 		</script>
+		</div>
 	</body>
 </html>

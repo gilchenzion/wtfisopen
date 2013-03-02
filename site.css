@@ -1,5 +1,7 @@
 body {
 	font-family: Arial, sans-serif;
+	margin:0;
+	padding:0;
 }
 
 #instructions {
@@ -60,16 +62,57 @@ p {
 }
 
 .menu_item {
-	float: left;
-	width: 150px;
-	height: 150px;	
-	margin: 5px;
+	text-align:left;
+	font-size:120%;
+	line-height: 1.5em;
+}
+
+.item {
+	font-weight:bold;
+	font-size: 150%;
+}
+
+#navbar {
+	margin: 0;
+	padding: 0;
 	border:1px solid black;
-	padding:3px;
-	text-align:center;
+	height:50px;
+	background: #000;
 }
 
 .clearer {
 	clear:both;
+}
+
+#navi {
+	list-style-type:none;
+	
+}
+
+#navi li {
+	float: left;
+	color: white;
+	margin-right: 30px;
+}
+
+#navi li a{
+	color:white;
+}
+
+#navi li a:hover {
+	background:blue;
+}
+
+#title {
+	font-size:120%;
+	font-weight:bold;
+}
+
+.open_status {
+	color:#76EE00;
+}
+
+.closed_status {
+	color:red;
 }
 
