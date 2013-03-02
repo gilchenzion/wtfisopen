@@ -1,0 +1,75 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+#instructions {
+	width:100%;
+	text-align:center;
+}
+
+a {
+	text-decoration: none;
+	color:#000;
+}
+
+a:hover {
+	color:blue;
+}
+
+p {
+	margin:20px;
+	padding:0px;
+}
+
+.announce {
+	font-size:700%;
+	line-height:
+	margin:0px;
+	padding:0px;
+	line-height:1em;
+	width:100%;
+	text-align:center;
+}
+
+#Jay {
+	font-family: 'Molle', cursive;
+}
+
+#Fer {
+	font-family: 'Wendy One', sans-serif;
+}
+
+#JJ {
+	font-family: 'Keania One', cursive;
+}
+.dininghalls {
+	margin-top:50px;
+	list-style-type:none;
+}
+
+.hall {
+	float:left;
+	width: 33%;
+}
+
+.hall_info {
+	text-align:center;
+	border:3px solid #000;
+	margin:5px;
+	
+}
+
+.menu_item {
+	float: left;
+	width: 150px;
+	height: 150px;	
+	margin: 5px;
+	border:1px solid black;
+	padding:3px;
+	text-align:center;
+}
+
+.clearer {
+	clear:both;
+}
+
