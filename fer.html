@@ -12,7 +12,7 @@
 			var cbk = function(data){
 				for (var i = 0; i < data.data.length; i++)
 				{
-					if(data.data[i].meal_type == checkFer())
+					if(data.data[i].meal_type === checkFer())
 					{
 							$('.inner').append("<h3>"+ getFullName(checkFer()) +"</h3>");
 							for (var j = 0; j < data.data[i].menu.length; j++)
